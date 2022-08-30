@@ -24,38 +24,38 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!-- Link CSS -->  
     <link rel="stylesheet" href="./assets/style/base.css">
-    <link rel="stylesheet" href="./assets/style/style.css"> 
+    <link rel="stylesheet" href="./assets/style/style.css">  
+    <link rel="stylesheet" href="./assets/style/responsive.css">
 </head>
 <body> 
-    <section id="header"> 
-        <div class="header-top"> 
-            <div class="container">  
+    <section id="header">
+        <div class="header-top">
+            <div class="container">
                 <div class="header-top-container">
                     <div class="header-top__phone">
-                        <a class="header-top__phone-link" href=""> 
+                        <a class="header-top__phone-link" href="tel:+84768494121">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                             <p>Hotline: 0768494121</p>
                         </a>
-                    </div> 
+                    </div>
                     <ul class="header-top__sub-top">
-                        <li class="header-top__sub-top__item"> 
-                            <a href="" class="header-top__sub-top__item-link"> 
-                                <i class="fa-solid fa-magnifying-glass"></i> 
-                                <p>Tìm kiếm</p>
-                            </a> 
+                        <li class="header-top__sub-top__item">
+                            <input href="" class="header-top__sub-top__item-link header-top__sub-top__item-link--search"
+                                placeholder=" Tìm kiếm  ">
+                            <i class="fa-solid fa-magnifying-glass header-icon--search"></i>
                         </li>
-                        <li class="header-top__sub-top__item"> 
-                            <a href="" class="header-top__sub-top__item-link"> 
-                                <i class="fa-solid fa-user"></i> 
+                        <li class="header-top__sub-top__item">
+                            <a href="" class="header-top__sub-top__item-link">
+                                <i class="fa-solid fa-user"></i>
                                 <p>Tài khoản</p>
-                            </a> 
+                            </a>
                         </li>
-                        <li class="header-top__sub-top__item"> 
-                            <a href="" class="header-top__sub-top__item-link"> 
-                                <i class="fa-solid fa-cart-shopping cart-shopping-icon"></i> 
+                        <li class="header-top__sub-top__item">
+                            <a href="" class="header-top__sub-top__item-link">
+                                <i class="fa-solid fa-cart-shopping cart-shopping-icon"></i>
                                 <p>Giỏ hàng</p>
-                            </a> 
-                        </li>  
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -65,25 +65,25 @@
                 <ul class="header-bottom-list">
                     <div class="header-bottom-list--left">
                         <li class="header-bottom-item">
-                            <a class="header-bottom-item__link main-color" href="index.html">Trang chủ</a>
+                            <a class="header-bottom-item__link " href="index.html">Trang chủ</a>
                         </li>
                         <li class="header-bottom-item">
                             <a class="header-bottom-item__link " href="menu.html">Thực đơn</a>
                         </li>
                         <li class="header-bottom-item">
-                            <a class="header-bottom-item__link " href="menu.html">Sản phẩm</a>
+                            <a class="header-bottom-item__link " href="trahoaqua.html">Sản phẩm</a>
                             <ul class="product-nav-list">
                                 <li class="product-nav-item">
-                                    <a class="product-nav-item__link" href="caphe.html">Cà phê</a>
-                                </li>
-                                <li class="product-nav-item">
-                                    <a class="product-nav-item__link" href="banhngot.html">Bánh ngọt</a>
+                                    <a class="product-nav-item__link" href="trahoaqua.html">trà hoa quả</a>
                                 </li>
                                 <li class="product-nav-item">
                                     <a class="product-nav-item__link" href="smoothies.html">smoothies</a>
                                 </li>
                                 <li class="product-nav-item">
-                                    <a class="product-nav-item__link" href="trahoaqua.html">trà hoa quả</a>
+                                    <a class="product-nav-item__link" href="banhngot.html">Bánh ngọt</a>
+                                </li>
+                                <li class="product-nav-item">
+                                    <a class="product-nav-item__link" href="caphe.html">Cà phê</a>
                                 </li>
                             </ul>
                         </li>
@@ -95,7 +95,7 @@
                     </li>
                     <div class="header-bottom-list--right">
                         <li class="header-bottom-item">
-                            <a class="header-bottom-item__link " href="news.html">Tin tức</a>
+                            <a class="header-bottom-item__link main-color" href="news.html">Tin tức</a>
                         </li>
                         <li class="header-bottom-item">
                             <a class="header-bottom-item__link " href="introduce.html">Giới thiệu</a>
@@ -106,8 +106,89 @@
                     </div>
                 </ul>
             </div>
-        </div>
-    </section>   
+        </div> 
+        <div class="header-bottom--mobile">
+            <div class="container">                
+                <ul class="header-bottom--mobile-list">  
+                    <li class="header-bottom--mobile-item">   
+                        <label class="fa-solid fa-bars header-mobile-icon" for="toggle-nav-mobile"></label> 
+                        <input type="checkbox" id="toggle-nav-mobile" class="toggle-nav-mobile" hidden>  
+                        
+                            <ul class="nav-mobile-list">   
+                                <label for="toggle-nav-mobile" class="fa-solid fa-xmark nav-mobile-list--close-btn"></label> 
+                                <div class="login-reister-mobile"> 
+                                    <a href="" class="login-link"> 
+                                        đăng nhập 
+                                    </a>
+                                    <a href="" class="register-link"> 
+                                        đăng kí 
+                                    </a>
+                                </div>
+                                <li class="nav-mobile-item">  
+                                    <a href="index.html" class="nav-mobile-item__link"> 
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="nav-mobile-item">  
+                                    <a href="menu.html" class="nav-mobile-item__link"> 
+                                        Thực đơn
+                                    </a>
+                                </li>
+                                <li class="nav-mobile-item nav-mobile-item--products">   
+                                    <div class="nav-mobile-item--products--toggle">
+                                        <a href="trahoaqua.html" class="nav-mobile-item__link"> 
+                                            Sản phẩm
+                                        </a>   
+                                        <i class="toggle-btn-product-nav fa-solid fa-plus"></i>
+                                    </div>
+                                    <ul class="nav-product-list">
+                                        <li class="nav-product-item">  
+                                            <a href="trahoaqua.html" class="nav-product-item__link">Trà hoa quả</a>
+                                        </li>
+                                        <li class="nav-product-item">  
+                                            <a href="smoothies.html" class="nav-product-item__link"> 
+                                                Smoothies
+                                            </a>
+                                        </li>
+                                        <li class="nav-product-item"> 
+                                            <a href="banhngot.html" class="nav-product-item__link">Bánh ngọt</a>
+                                        </li>
+                                        <li class="nav-product-item">  
+                                            <a href="caphe.html" class="nav-product-item__link">Cà phê</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-mobile-item">  
+                                    <a href="news.html" class="nav-mobile-item__link"> 
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="nav-mobile-item">  
+                                    <a href="introduce.html" class="nav-mobile-item__link"> 
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="nav-mobile-item">  
+                                    <a href="contact.html" class="nav-mobile-item__link"> 
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                    </li> 
+                    <li class="header-bottom--mobile-item"> 
+                        <a href="index.html"> 
+                            <img src="./assets/imgs/logo_mobi.webp" alt="" class="main-logo-mobile">
+                        </a>
+                    </li>
+                    <li class="header-bottom--mobile-item"> 
+                        <label for="" class="fa-solid fa-cart-shopping header-mobile-icon"></label>
+                    </li>
+                </ul> 
+                <input href="" class="header-bottom--mobile-search" placeholder=" Tìm kiếm  ">
+            </div>
+        </div> 
+    </section>
 
     <section id="home"> 
         <section class="slider"></section>  
@@ -189,27 +270,27 @@
                     </li>
                     <li class="why-item">
                         <div class="why-item__img-wrap">
-                            <img src="./assets/imgs/icon_why_1.webp" alt="" class="why-item__img">
+                            <img src="./assets/imgs/icon_why_2.webp" alt="" class="why-item__img">
                         </div> 
                         <div class="why-item-content">
                             <h3 class="why-item-content__heading"> 
-                                Giá cả phải chăng
+                                Hương vị tuyệt hảo
                             </h3> 
                             <p class="why-item-content__text"> 
-                    Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng
+                    Những đọt trà được lựa chọn cẩn thận ngay từ lúc đang ngâm mình trong sương
                             </p>
                         </div>
                     </li>
                     <li class="why-item">
                         <div class="why-item__img-wrap">
-                            <img src="./assets/imgs/icon_why_1.webp" alt="" class="why-item__img">
+                            <img src="./assets/imgs/icon_why_3.webp" alt="" class="why-item__img">
                         </div> 
                         <div class="why-item-content">
                             <h3 class="why-item-content__heading"> 
                                 Giá cả phải chăng
                             </h3> 
                             <p class="why-item-content__text"> 
-                    Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng
+    Cam kết chỉ cung cấp lá trà có nguồn gốc được kiểm soát chất lượng chặt
                             </p>
                         </div>
                     </li>
@@ -224,24 +305,34 @@
                 <p class="common-heading__text">menu hôm nay</p>
             </div> 
             <div class="menu-main">
-                <ul class="menu-main__btns">
-                    <li class="menu-mains__item">
-                        <button class="menu-mains__item-btn">Trà hoa quả</button>
-                    </li>
-                    <li class="menu-mains__item">
-                        <button class="menu-mains__item-btn">Cà phê</button>
-                    </li>
-                    <li class="menu-mains__item">
-                        <button class="menu-mains__item-btn">Smothies</button>
-                    </li>
-                    <li class="menu-mains__item">
-                        <button class="menu-mains__item-btn">Bánh ngọt</button>
-                    </li>
-                </ul>     
+                <div class="menu-main__btns"> 
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6"> 
+                            <li class="menu-mains__item">
+                                <button class="menu-mains__item-btn">Trà hoa quả</button>
+                            </li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6"> 
+                            <li class="menu-mains__item">
+                                <button class="menu-mains__item-btn">Cà phê</button>
+                            </li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6"> 
+                            <li class="menu-mains__item">
+                                <button class="menu-mains__item-btn">Smothies</button>
+                            </li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6"> 
+                            <li class="menu-mains__item">
+                                <button class="menu-mains__item-btn">Bánh ngọt</button>
+                            </li>
+                        </div>
+                    </div>
+                </div>     
                 <div class="drink-list">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-phuc-bon-tu.png" alt="" class="drink-item__img"> 
@@ -259,7 +350,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-vai.webp" alt="" class="drink-item__img"> 
@@ -277,7 +368,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-cam-dao.webp" alt="" class="drink-item__img"> 
@@ -295,7 +386,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-tao.webp" alt="" class="drink-item__img"> 
@@ -313,7 +404,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-viet-quat.webp" alt="" class="drink-item__img"> 
@@ -331,7 +422,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-dau-tay.webp" alt="" class="drink-item__img"> 
@@ -349,7 +440,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-xoai.webp" alt="" class="drink-item__img"> 
@@ -367,7 +458,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-12">
                                 <div class="drink-item">
                                     <div class="drink-item__img-wrap">
                                         <img src="./assets/imgs/tra-hoa-qua/tra-chanh.webp" alt="" class="drink-item__img"> 
@@ -442,7 +533,7 @@
             <div class="news-main">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="news-item">
                                 <div class="news-item__img-wrap">
                                     <img src="./assets/imgs/news-1.webp" alt="" class="news-item__img">
@@ -458,7 +549,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="news-item">
                                 <div class="news-item__img-wrap">
                                     <img src="./assets/imgs/news-2.webp" alt="" class="news-item__img">
@@ -474,7 +565,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="news-item">
                                 <div class="news-item__img-wrap">
                                     <img src="./assets/imgs/news-3.webp" alt="" class="news-item__img">
@@ -493,22 +584,34 @@
                     </div>
                 </div>
             </div>
-        </section> 
-        <section class="gallery">
-            <div class="gallery-img-wrap">
-                <img src="./assets/imgs/picture_1.webp" alt="" class="gallery-img">
-            </div>
-            <div class="gallery-img-wrap">
-                <img src="./assets/imgs/picture_2.webp" alt="" class="gallery-img">
-            </div>
-            <div class="gallery-img-wrap">
-                <img src="./assets/imgs/picture_3.webp" alt="" class="gallery-img">
-            </div>
-            <div class="gallery-img-wrap">
-                <img src="./assets/imgs/picture_4.webp" alt="" class="gallery-img">
-            </div>
-            <div class="gallery-img-wrap">
-                <img src="./assets/imgs/picture_5.webp" alt="" class="gallery-img">
+        </section>   
+        <section class="gallery">     
+            <div class="row">
+                <div class="col-lg col-md-4 g-0"> 
+                    <div class="gallery-img-wrap">
+                        <img src="./assets/imgs/picture_1.webp" alt="" class="gallery-img">
+                    </div>
+                </div> 
+                <div class="col-lg col-md-4 g-0"> 
+                    <div class="gallery-img-wrap">
+                        <img src="./assets/imgs/picture_2.webp" alt="" class="gallery-img">
+                    </div>
+                </div> 
+                <div class="col-lg col-md-4 g-0"> 
+                    <div class="gallery-img-wrap">
+                        <img src="./assets/imgs/picture_3.webp" alt="" class="gallery-img">
+                    </div>
+                </div> 
+                <div class="col-lg col-md-4 g-0"> 
+                    <div class="gallery-img-wrap">
+                        <img src="./assets/imgs/picture_4.webp" alt="" class="gallery-img">
+                    </div>
+                </div> 
+                <div class="col-lg col-md-4 g-0"> 
+                    <div class="gallery-img-wrap">
+                        <img src="./assets/imgs/picture_5.webp" alt="" class="gallery-img">
+                    </div>
+                </div> 
             </div>
         </section>
     </section>
@@ -516,7 +619,7 @@
         <div class="container"> 
             <div class="footer-content">
                 <div class="row">  
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="footer-column">
                             <h3 class="footer-column-heading"> 
                                 <a href="index.html"> 
@@ -569,7 +672,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-column">
                             <h3 class="footer-column-heading footer-column-heading--contact">
                                 Liên hệ với chúng tôi
@@ -578,7 +681,7 @@
                                 <ul class="footer-content-contact-list">
                                     <li class="footer-content-contact-item">
                                         <i class="fa-solid fa-location-dot"></i> 
-                                        <p>Địa chỉ: Tâng 6 toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội, Vietnam</p>
+                                        <p>Địa chỉ: Trường Đại Học Công Nghệ Thông Tin Và Truyền Thông Việt - Hàn, Đại Học Đà Nẵng</p>
                                     </li>
                                     <li class="footer-content-contact-item">
                                         <i class="fa-solid fa-phone"></i> 
@@ -588,7 +691,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-column">
                             <h3 class="footer-column-heading footer-column-heading--sale">
                                 ĐĂNG KÝ NHẬN KHUYẾN MÃI
@@ -625,6 +728,7 @@
     crossorigin="anonymous"></script>
     <!-- Link Main Script --> 
     <script src="./assets/script/main.js"></script>  
-    <script src="./assets/script/owlcarousel.js"></script>
+    <script src="./assets/script/owlcarousel.js"></script> 
+    <script src="./assets/script/mobile.js"></script>
 </body>
 </html>
