@@ -1,9 +1,25 @@
+$('#home .gallery .owl-carousel.owl-carousel--gallery').owlCarousel({  
+    loop: true,
+    autoplay: true,  
+    autoplayTimeout:6000,
+     responsive:{
+        0:{
+            items:2
+        },
+        740:{
+            items:3
+        },
+        1024:{
+            items:5
+        }
+    }
+}) 
 $('#home .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,   
     autoplay:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:6000,
     dotsEach: true, 
     URLhashListener:true, 
     center: true,
@@ -26,7 +42,7 @@ $('#menu .owl-carousel').owlCarousel({
     nav:true,   
      responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:3
@@ -35,4 +51,5 @@ $('#menu .owl-carousel').owlCarousel({
             items:4
         }
     }
-}) 
+})  
+

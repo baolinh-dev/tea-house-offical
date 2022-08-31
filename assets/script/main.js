@@ -123,8 +123,10 @@ rowEle.classList.add('row')
 
 
 function concatChild(indexBtn ,indexChild) {  
-    var colEle = document.createElement('div'); 
+    var colEle = document.createElement('div');  
     colEle.classList.add('col-lg-3')   
+    colEle.classList.add('col-md-6')   
+    colEle.classList.add('col-6')   
     colEle.innerHTML = `
         <div class="drink-item">
             <div class="drink-item__img-wrap">
