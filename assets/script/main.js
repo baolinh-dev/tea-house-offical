@@ -111,9 +111,7 @@ var banhngots = [
 var products = [
     trahoaqua, caphes, smoothies, banhngots
 ]   
-// products[0].forEach((item) => { 
-//     console.log(item);
-// })       
+    
 var containerEle = document.createElement('div'); 
 containerEle.classList.add('container')  
 

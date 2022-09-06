@@ -8,5 +8,4 @@ btnProductNav.onclick = () => {
         navListProduct.style.height = "0px"; 
     }
 }    
-console.log(navListProduct.clientHeight);
 

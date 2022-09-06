@@ -13,8 +13,24 @@ $('#home .gallery .owl-carousel.owl-carousel--gallery').owlCarousel({
             items:5
         }
     }
+})  
+$('#home .drink-list .owl-carousel').owlCarousel({  
+    loop: true,
+    autoplay: false,  
+    autoplayTimeout:6000,
+    responsive:{
+        0:{
+            items:2
+        },
+        740:{
+            items:2
+        },
+        1024:{
+            items:4
+        }
+    }
 }) 
-$('#home .owl-carousel').owlCarousel({
+$('#home .category .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,   
